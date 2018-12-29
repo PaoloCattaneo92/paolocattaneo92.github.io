@@ -1,0 +1,91 @@
+name: Paolo Cattaneo
+bio: Software Engineer
+
+description: Personal website of Paolo Cattaneo - Software Engineer
+
+external-image: false
+picture: assets/images/duomo.jpg
+
+resume: true
+resume-external: true
+resume-url: https://mega.nz/#!5egw3IDY!HItut3rWFS-26P30CGr9MP1BQFeXJzeLviNoTdxlus4
+
+url: http://paolocattaneo92.github.io
+
+permalink: /:title/
+
+analytics-google: 'UA-131481111-1'
+
+# analytics-piwik-url: 'piwik.my-host.com'
+# analytics-piwik-id: 1
+
+disqus:
+  shortname: 
+  categories: 
+
+# if you don't have any of social below, comment the line
+facebook: paolo.z.cattaneo
+# twitter: https://twitter.com/paoloaerumna
+# google: mygoogle
+# instagram: myinstagram
+# pinterest: mypinterest
+linkedin: paolo-cattaneo-eng
+# youtube: myyoutube
+# spotify: myspotify
+github: paolocattaneo92
+# gitlab: mygitlab
+# lastfm: mylastfm
+stackoverflow: 9461759/paolo-cattaneo
+# quora: userquora
+# reddit: username
+# medium: medium
+# vimeo: myvimeo
+# lanyrd: mylanyrd
+email: paolo.cattaneo92@gmail.com
+
+authors:
+    paolocattaneo:
+        name: Paolo Cattaneo
+        bio: Software Engineer
+        external-image: false
+        picture: assets/images/duomo.jpg
+        twitter: paoloaerumna
+
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: large
+
+# if you don't need pagination, comment the *paginate* configs below
+# paginate: 5
+# paginate_path: "blog/:num/"
+
+# if you don't need projects, comment the *projects* configs below
+projects: false
+
+# if you don't need "about" or "blog", comment them out below
+about: true
+blog: true
+
+read-time: true
+
+show-tags: true
+
+related: true
+
+post-advance-links: [blog]
+
+show-author: false
+
+# do you want some animations?
+animation: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-admin
+
+jekyll-mentions:
+    base_url: https://github.com
