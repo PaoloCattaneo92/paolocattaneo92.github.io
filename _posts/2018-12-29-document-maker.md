@@ -2,8 +2,9 @@
 title: "Document Maker first Release"
 layout: post
 date: 2018-12-29 13:00
-image: /assets/images/markdown.jpg
+image: https://raw.githubusercontent.com/PaoloCattaneo92/DocumentMaker/master/documentmaker.png
 headerImage: false
+project: true
 tag:
 - release
 - personal
@@ -26,7 +27,7 @@ I think that this approach is very much straightforward from data objects to its
 Read more about how to use _Document Maker_ library on its official [Github project link](https://github.com/PaoloCattaneo92/DocumentMaker), I have written a lot of examples and specific
 guide about how to use every feature.
 
-<img src="https://raw.githubusercontent.com/PaoloCattaneo92/DocumentMaker/master/documentmaker.png" />
+<img src="{{ page.image }}" />
 
 ## Installation
 With **Package Manager**:

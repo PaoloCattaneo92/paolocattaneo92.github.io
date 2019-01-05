@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Home
+title: Home 
 ---
 
 <h1>Welcome!</h1>
@@ -15,8 +15,14 @@ title: Home
 
 <hr>
 
-<h2>My last release: <i>DocumentMaker</i></h2>
+<h2>My last post: <i>{% for post in site.posts limit:1 %} {{ post.title }} {% endfor %} </i></h2>
 <p>
-    Check out my last open source project <a href="/document-maker">DocumentMaker</a> release in my blog.
+        {% for post in site.posts limit:1 %} {{ post.description }} {% endfor %}. <a href="{% for post in site.posts limit:1 %} {{ post.url }} {% endfor %}">Read more.</a>
  </p>
-<img src="../assets/images/documentmaker.png" alt="Pic of my last C# library" title="DocumentMaker">
+<img src="{% for post in site.posts limit:1 %} {{ post.image }} {% endfor %}" alt="Pic of my last C# library" title="{% for post in site.posts limit:1 %} {{ post.title }} {% endfor %}">
+
+<h2>Blog</h2>
+<p>
+    Check out my <a href="/blog">Blog</a>, currently containing {{ site.posts.size }} posts about my projects or information/tips/news about the world of Software Design & Development.
+</p>
+
