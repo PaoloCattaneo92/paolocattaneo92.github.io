@@ -7,8 +7,8 @@ external-image: false
 picture: assets/images/duomo.jpg
 
 resume: true
-resume-external: true
-resume-url: https://mega.nz/#!pLAzQIpC!dFNc8jg0OL2en1KT0Ddg8oIyouu8D7tvs18s8j1lh6Q
+resume-external: false
+resume-url: CattaneoPaoloCV.pdf
 
 url: http://paolocattaneo92.github.io
 
