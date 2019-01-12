@@ -19,7 +19,7 @@ title: Home
 <p>
         {% for post in site.posts limit:1 %} {{ post.description }} {% endfor %}. <a href="{% for post in site.posts limit:1 %} {{ post.url }} {% endfor %}">Read more.</a>
  </p>
-<img src="{% for post in site.posts limit:1 %} {{ post.image }} {% endfor %}" alt="Pic of my last C# library" title="{% for post in site.posts limit:1 %} {{ post.title }} {% endfor %}">
+<img src="{% for post in site.posts limit:1 %} {{ post.image }} {% endfor %}" title="{% for post in site.posts limit:1 %} {{ post.title }} {% endfor %}">
 
 <h2>Blog</h2>
 <p>
