@@ -2,7 +2,7 @@
 title: "Stop using switch statment"
 layout: post
 date: 2019-01-05 15:00
-image: ../assets/images.stopswitch.png
+image: https://github.com/PaoloCattaneo92/paolocattaneo92.github.io/blob/master/assets/images/switch_nevermore.jpg
 headerImage: false
 project: true
 tag:
