@@ -188,7 +188,8 @@ img {
   inset: 0;
   background:
     linear-gradient(180deg, rgba(10,10,15,0.3) 0%, rgba(10,10,15,0.7) 60%, var(--bg-dark) 100%),
-    url('https://images.unsplash.com/photo-1506157786151-b8491531f063?w=1920&q=80') center/cover no-repeat;
+    /* TODO: replace with hero background image */
+    url('../img/backdrop.png') center/cover no-repeat;
   filter: saturate(0.4) brightness(0.6);
   transform: scale(1.05);
   transition: transform 8s ease;
