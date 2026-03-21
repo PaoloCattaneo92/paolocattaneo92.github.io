@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frostlight — The Vault</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="secret-page">
+    <div class="secret-container">
+      <!-- Lock Screen -->
+      <div id="lockScreen">
+        <div class="secret-icon"><i class="fas fa-dungeon"></i></div>
+        <h1 class="secret-title">The Vault</h1>
+        <p class="secret-subtitle">This chamber holds unreleased material. Enter the passphrase to proceed.</p>
+
+        <div class="password-form">
+          <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter passphrase..."
+            autocomplete="off"
+          >
+          <button id="unlockBtn">Enter</button>
+        </div>
+        <p class="password-error" id="passwordError">Wrong passphrase. The gate remains sealed.</p>
+      </div>
+
+      <!-- Player Area (hidden until unlocked) -->
+      <div class="player-area" id="playerArea">
+        <div class="secret-icon"><i class="fas fa-scroll"></i></div>
+        <h1 class="secret-title">Unreleased Tracks</h1>
+        <p class="player-warning"><i class="fas fa-exclamation-triangle"></i> Confidential — Do not share or distribute</p>
+
+        <ul class="track-list" id="trackList">
+          <li class="track-item" data-track="0">
+            <button class="track-play-btn"><i class="fas fa-play"></i></button>
+            <div class="track-info">
+              <div class="track-name">Ashes of the Northern Sky</div>
+              <div class="track-duration">Demo · 5:23</div>
+              <div class="track-progress"><div class="track-progress-bar"></div></div>
+            </div>
+          </li>
+          <li class="track-item" data-track="1">
+            <button class="track-play-btn"><i class="fas fa-play"></i></button>
+            <div class="track-info">
+              <div class="track-name">Beneath the Frozen Pines</div>
+              <div class="track-duration">Pre-production · 4:47</div>
+              <div class="track-progress"><div class="track-progress-bar"></div></div>
+            </div>
+          </li>
+          <li class="track-item" data-track="2">
+            <button class="track-play-btn"><i class="fas fa-play"></i></button>
+            <div class="track-info">
+              <div class="track-name">The Last Stand at Orobie</div>
+              <div class="track-duration">Demo · 6:11</div>
+              <div class="track-progress"><div class="track-progress-bar"></div></div>
+            </div>
+          </li>
+          <li class="track-item" data-track="3">
+            <button class="track-play-btn"><i class="fas fa-play"></i></button>
+            <div class="track-info">
+              <div class="track-name">Wolfborn (Acoustic Version)</div>
+              <div class="track-duration">Rehearsal · 3:55</div>
+              <div class="track-progress"><div class="track-progress-bar"></div></div>
+            </div>
+          </li>
+          <li class="track-item" data-track="4">
+            <button class="track-play-btn"><i class="fas fa-play"></i></button>
+            <div class="track-info">
+              <div class="track-name">March of the Iron Legion</div>
+              <div class="track-duration">Instrumental · 7:02</div>
+              <div class="track-progress"><div class="track-progress-bar"></div></div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="now-playing-bar" id="nowPlayingBar">
+          <div class="now-playing-label">Now Playing</div>
+          <div class="now-playing-title" id="nowPlayingTitle">—</div>
+          <div class="audio-controls">
+            <button id="prevTrackBtn" aria-label="Previous"><i class="fas fa-backward-step"></i></button>
+            <button id="playPauseBtn" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
+            <button id="nextTrackBtn" aria-label="Next"><i class="fas fa-forward-step"></i></button>
+            <div class="global-progress" id="globalProgress">
+              <div class="global-progress-bar" id="globalProgressBar"></div>
+            </div>
+            <div class="audio-time" id="audioTime">0:00 / 0:00</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem;">
+        <a href="index.html" style="font-family: var(--font-ui); font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--text-dim);">
+          <i class="fas fa-arrow-left"></i> Return to main site
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/secret.js"></script>
+</body>
+</html>
