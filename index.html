@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frostlight — Epic Folk Metal | Bergamo, Italy</title>
-  <meta name="description" content="Frostlight lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.">
+  <meta name="description" content="Frostlight is an epic folk metal band from Bergamo, Italy. Forging legends from frost, fire and folk melodies since 2014.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,11 +23,19 @@
   <nav class="navbar" id="navbar">
     <a href="#" class="nav-logo"><img src="img/logo.svg" alt="Frostlight" class="nav-logo-img"></a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#bio">Bio</a></li>
-      <li><a href="#video">Video</a></li>
-      <li><a href="#members">Members</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#bio" data-i18n="nav.bio">Bio</a></li>
+      <li><a href="#video" data-i18n="nav.video">Video</a></li>
+      <li><a href="#members" data-i18n="nav.members">Members</a></li>
+      <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      <li class="lang-switcher">
+        <button class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano">
+          <svg viewBox="0 0 640 480" class="flag-icon"><rect width="213.3" height="480" fill="#009246"/><rect x="213.3" width="213.4" height="480" fill="#fff"/><rect x="426.7" width="213.3" height="480" fill="#ce2b37"/></svg>
+        </button>
+        <button class="lang-btn" data-lang="en" aria-label="English" title="English">
+          <svg viewBox="0 0 640 480" class="flag-icon"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0z"/><path fill="#C8102E" d="m424 281 216 159v40L369 281zm-184 20 6 35L54 480H0zM640 0v3L391 191l2-44L590 0zM0 0l239 176h-60L0 42z"/><path fill="#FFF" d="M241 0v480h160V0zM0 160v160h640V160z"/><path fill="#C8102E" d="M0 193v96h640v-96zM273 0v480h96V0z"/></svg>
+        </button>
+      </li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
       <span></span>
@@ -40,15 +48,15 @@
   <section class="hero" id="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
-      <p class="hero-subtitle">Epic Folk Metal — Bergamo, Italy</p>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Epic Folk Metal — Bergamo, Italy</p>
       <div class="hero-logo">
         <img src="img/logo.svg" alt="Frostlight" class="hero-logo-img">
       </div>
-      <p class="hero-tagline">"Lorem ipsum dolor sit amet, consectetur adipiscing"</p>
-      <a href="#video" class="hero-cta">Watch Latest Single</a>
+      <p class="hero-tagline" data-i18n="hero.tagline">“Where frost meets fire, legends are forged”</p>
+      <a href="#video" class="hero-cta" data-i18n="hero.cta">Watch Latest Single</a>
     </div>
     <div class="scroll-indicator">
-      <span>Scroll</span>
+      <span data-i18n="hero.scroll">Scroll</span>
       <div class="arrow"></div>
     </div>
   </section>
@@ -67,7 +75,7 @@
         <div style="position: absolute; bottom: 2rem; left: 2rem; z-index: 2; display: flex; align-items: center; gap: 1rem;">
           <img src="img/Simbolo.svg" alt="" class="band-photo-symbol">
           <div>
-            <span style="font-family: var(--font-ui); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: var(--accent-ice);">The fellowship</span>
+            <span style="font-family: var(--font-ui); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: var(--accent-ice);" data-i18n="bandphoto.label">The fellowship</span>
             <img src="img/logo.svg" alt="Frostlight" style="height: 36px; display: block; margin-top: 0.3rem; filter: brightness(1.2);">
           </div>
         </div>
@@ -79,8 +87,8 @@
   <section class="section" id="bio">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Our Story</span>
-        <h2 class="section-title">The Saga of Frostlight</h2>
+        <span class="section-label" data-i18n="bio.label">Our Story</span>
+        <h2 class="section-title" data-i18n="bio.title">The Saga of Frostlight</h2>
         <div class="section-divider"></div>
       </div>
       <div class="bio-content reveal">
@@ -90,19 +98,19 @@
         <div class="bio-stats">
           <div class="bio-stat">
             <span class="bio-stat-number">3</span>
-            <span class="bio-stat-label">Albums</span>
+            <span class="bio-stat-label" data-i18n="bio.stat.albums">Albums</span>
           </div>
           <div class="bio-stat">
             <span class="bio-stat-number">200+</span>
-            <span class="bio-stat-label">Live Shows</span>
+            <span class="bio-stat-label" data-i18n="bio.stat.shows">Live Shows</span>
           </div>
           <div class="bio-stat">
             <span class="bio-stat-number">12</span>
-            <span class="bio-stat-label">Years Active</span>
+            <span class="bio-stat-label" data-i18n="bio.stat.years">Years Active</span>
           </div>
           <div class="bio-stat">
             <span class="bio-stat-number">5</span>
-            <span class="bio-stat-label">Members</span>
+            <span class="bio-stat-label" data-i18n="bio.stat.members">Members</span>
           </div>
         </div>
       </div>
@@ -113,20 +121,21 @@
   <section class="section section-alt" id="video">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Latest Release</span>
-        <h2 class="section-title">But the Dawn Came Again</h2>
+        <span class="section-label" data-i18n="video.label">Latest Release</span>
+        <h2 class="section-title" data-i18n="video.title">But the Dawn Came Again</h2>
         <div class="section-divider"></div>
       </div>
       <div class="video-wrapper reveal">
         <iframe
           src="https://www.youtube.com/embed/dQw4w9WgXcQ"
           title="Frostlight — But the Dawn Came Again (Official Music Video)"
+          data-i18n-title="video.iframe.title"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
           loading="lazy"
         ></iframe>
       </div>
-      <p class="video-caption reveal">
+      <p class="video-caption reveal" data-i18n-html="video.captionhtml">
         <em>"But the Dawn Came Again"</em> — Lorem Ipsum · Dolor Sit Amet · 2026
       </p>
     </div>
@@ -135,8 +144,8 @@
   <!-- ====== BAND MEMBERS ====== -->
   <section class="section members-section" id="members">
     <div class="section-header reveal">
-      <span class="section-label">The Fellowship</span>
-      <h2 class="section-title">Band Members</h2>
+      <span class="section-label" data-i18n="members.label">The Fellowship</span>
+      <h2 class="section-title" data-i18n="members.title">Band Members</h2>
       <div class="section-divider"></div>
     </div>
 
@@ -152,8 +161,8 @@
           >
           <div class="member-info">
             <h3 class="member-name">Ale</h3>
-            <p class="member-role">Vocals & Rhythm Guitar</p>
-            <p class="member-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua veniam.</p>
+            <p class="member-role" data-i18n="member.ale.role">Vocals & Rhythm Guitar</p>
+            <p class="member-bio" data-i18n="member.ale.bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua veniam.</p>
           </div>
         </div>
 
@@ -166,8 +175,8 @@
           >
           <div class="member-info">
             <h3 class="member-name">Paolo</h3>
-            <p class="member-role">Lead Guitar, Whistles & Choirs</p>
-            <p class="member-bio">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+            <p class="member-role" data-i18n="member.paolo.role">Lead Guitar, Whistles & Choirs</p>
+            <p class="member-bio" data-i18n="member.paolo.bio">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
           </div>
         </div>
 
@@ -180,8 +189,8 @@
           >
           <div class="member-info">
             <h3 class="member-name">Boschi</h3>
-            <p class="member-role">Bass & Choirs</p>
-            <p class="member-bio">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p>
+            <p class="member-role" data-i18n="member.boschi.role">Bass & Choirs</p>
+            <p class="member-bio" data-i18n="member.boschi.bio">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p>
           </div>
         </div>
 
@@ -194,8 +203,8 @@
           >
           <div class="member-info">
             <h3 class="member-name">Dario</h3>
-            <p class="member-role">Keyboards</p>
-            <p class="member-bio">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum perspiciatis.</p>
+            <p class="member-role" data-i18n="member.dario.role">Keyboards</p>
+            <p class="member-bio" data-i18n="member.dario.bio">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum perspiciatis.</p>
           </div>
         </div>
 
@@ -208,15 +217,15 @@
           >
           <div class="member-info">
             <h3 class="member-name">Luca</h3>
-            <p class="member-role">Drums</p>
-            <p class="member-bio">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores ratione.</p>
+            <p class="member-role" data-i18n="member.luca.role">Drums</p>
+            <p class="member-bio" data-i18n="member.luca.bio">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores ratione.</p>
           </div>
         </div>
 
       </div>
     </div>
     <p class="members-scroll-hint">
-      <span class="arrows">← →</span> Drag to explore the fellowship
+      <span class="arrows">← →</span> <span data-i18n="members.scroll">Drag to explore the fellowship</span>
     </p>
   </section>
 
@@ -224,8 +233,8 @@
   <section class="section section-alt" id="gallery">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Live & Beyond</span>
-        <h2 class="section-title">Gallery</h2>
+        <span class="section-label" data-i18n="gallery.label">Live & Beyond</span>
+        <h2 class="section-title" data-i18n="gallery.title">Gallery</h2>
         <div class="section-divider"></div>
       </div>
 
@@ -233,47 +242,47 @@
         <div class="gallery-item reveal">
           <!-- TODO: replace with gallery photo 1 -->
           <img src="img/members/fabiolione.jpg" alt="Live at Wacken Open Air 2024" loading="lazy">
-          <div class="gallery-overlay"><span>Wacken Open Air 2024</span></div>
+          <div class="gallery-overlay"><span data-i18n="gallery.1">Wacken Open Air 2024</span></div>
         </div>
         <div class="gallery-item reveal">
           <!-- TODO: replace with gallery photo 2 -->
           <img src="img/members/fabiolione.jpg" alt="Fans at Bergamo Metal Fest" loading="lazy">
-          <div class="gallery-overlay"><span>Bergamo Metal Fest</span></div>
+          <div class="gallery-overlay"><span data-i18n="gallery.2">Bergamo Metal Fest</span></div>
         </div>
         <div class="gallery-item reveal">
           <!-- TODO: replace with gallery photo 3 -->
           <img src="img/members/fabiolione.jpg" alt="Promo shoot in the Alps" loading="lazy">
-          <div class="gallery-overlay"><span>Alpine Promo Shoot</span></div>
+          <div class="gallery-overlay"><span data-i18n="gallery.3">Alpine Promo Shoot</span></div>
         </div>
         <div class="gallery-item reveal">
           <!-- TODO: replace with gallery photo 4 -->
           <img src="img/members/fabiolione.jpg" alt="Backstage at Hellfest 2025" loading="lazy">
-          <div class="gallery-overlay"><span>Hellfest 2025 — Backstage</span></div>
+          <div class="gallery-overlay"><span data-i18n="gallery.4">Hellfest 2025 — Backstage</span></div>
         </div>
         <div class="gallery-item reveal">
           <!-- TODO: replace with gallery photo 5 -->
           <img src="img/members/fabiolione.jpg" alt="Studio session" loading="lazy">
-          <div class="gallery-overlay"><span>Studio Session</span></div>
+          <div class="gallery-overlay"><span data-i18n="gallery.5">Studio Session</span></div>
         </div>
         <div class="gallery-item reveal">
           <!-- TODO: replace with gallery photo 6 -->
           <img src="img/members/fabiolione.jpg" alt="Live at Città Alta, Bergamo" loading="lazy">
-          <div class="gallery-overlay"><span>Città Alta, Bergamo</span></div>
+          <div class="gallery-overlay"><span data-i18n="gallery.6">Città Alta, Bergamo</span></div>
         </div>
         <div class="gallery-item reveal">
           <!-- TODO: replace with gallery photo 7 -->
           <img src="img/members/fabiolione.jpg" alt="European tour 2025" loading="lazy">
-          <div class="gallery-overlay"><span>European Tour 2025</span></div>
+          <div class="gallery-overlay"><span data-i18n="gallery.7">European Tour 2025</span></div>
         </div>
         <div class="gallery-item reveal">
           <!-- TODO: replace with gallery photo 8 -->
           <img src="img/members/fabiolione.jpg" alt="Official band portrait 2026" loading="lazy">
-          <div class="gallery-overlay"><span>Official Portrait 2026</span></div>
+          <div class="gallery-overlay"><span data-i18n="gallery.8">Official Portrait 2026</span></div>
         </div>
         <div class="gallery-item reveal">
           <!-- TODO: replace with gallery photo 9 -->
           <img src="img/members/fabiolione.jpg" alt="Acoustic set at medieval festival" loading="lazy">
-          <div class="gallery-overlay"><span>Medieval Festival — Acoustic Set</span></div>
+          <div class="gallery-overlay"><span data-i18n="gallery.9">Medieval Festival — Acoustic Set</span></div>
         </div>
       </div>
     </div>
@@ -283,14 +292,14 @@
   <section class="section" id="contact">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Get in Touch</span>
-        <h2 class="section-title">Contact</h2>
+        <span class="section-label" data-i18n="contact.label">Get in Touch</span>
+        <h2 class="section-title" data-i18n="contact.title">Contact</h2>
         <div class="section-divider"></div>
       </div>
 
       <div class="contact-grid reveal">
         <div class="contact-info">
-          <h3>Reach the Band</h3>
+          <h3 data-i18n="contact.reach">Reach the Band</h3>
 
           <div class="contact-item">
             <div class="contact-icon"><i class="fas fa-envelope"></i></div>
@@ -315,10 +324,10 @@
 
           <div class="contact-item">
             <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="contact-detail">Bergamo, Lombardy, Italy</div>
+            <div class="contact-detail" data-i18n="contact.location">Bergamo, Lombardy, Italy</div>
           </div>
 
-          <h3 style="margin-top: 2rem;">Follow Us</h3>
+          <h3 style="margin-top: 2rem;" data-i18n="contact.follow">Follow Us</h3>
           <div class="social-links">
             <a href="https://facebook.com/frostlightband" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
               <i class="fab fa-facebook-f"></i>
@@ -342,21 +351,21 @@
         </div>
 
         <div class="contact-form">
-          <h3>Send a Message</h3>
+          <h3 data-i18n="contact.send">Send a Message</h3>
           <form id="contactForm" onsubmit="return false;">
             <div class="form-group">
-              <input type="text" placeholder="Your Name" required>
+              <input type="text" placeholder="Your Name" required data-i18n-placeholder="contact.placeholder.name">
             </div>
             <div class="form-group">
-              <input type="email" placeholder="Your Email" required>
+              <input type="email" placeholder="Your Email" required data-i18n-placeholder="contact.placeholder.email">
             </div>
             <div class="form-group">
-              <input type="text" placeholder="Subject">
+              <input type="text" placeholder="Subject" data-i18n-placeholder="contact.placeholder.subject">
             </div>
             <div class="form-group">
-              <textarea placeholder="Your Message..." required></textarea>
+              <textarea placeholder="Your Message..." required data-i18n-placeholder="contact.placeholder.message"></textarea>
             </div>
-            <button type="submit" class="btn-submit">Send Message</button>
+            <button type="submit" class="btn-submit" data-i18n="contact.submit">Send Message</button>
           </form>
         </div>
       </div>
@@ -369,7 +378,7 @@
       <img src="img/Simbolo.svg" alt="" class="footer-symbol">
       <img src="img/logo.svg" alt="Frostlight" class="footer-logo-img">
     </div>
-    <p>&copy; 2026 Frostlight. Lorem ipsum dolor sit amet · Consectetur adipiscing elit.</p>
+    <p data-i18n="footer.copy">&copy; 2026 Frostlight. All rights reserved.</p>
   </footer>
 
   <!-- ====== LIGHTBOX ====== -->
@@ -381,6 +390,9 @@
   </div>
 
   <!-- Scripts -->
+  <script src="js/text-enUS.js"></script>
+  <script src="js/text-itIT.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
