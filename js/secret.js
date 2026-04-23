@@ -32,24 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- Audio Player ---
-  // Since these are unreleased tracks, we simulate playback with the Web Audio API
-  // generating ambient tones. In production, replace with actual audio file URLs.
-
   const tracks = [
-    { name: 'Ashes of the Northern Sky', duration: 323 },
-    { name: 'Beneath the Frozen Pines', duration: 287 },
-    { name: 'The Last Stand at Orobie', duration: 371 },
-    { name: 'Wolfborn (Acoustic Version)', duration: 235 },
-    { name: 'March of the Iron Legion', duration: 422 },
+    { name: 'But the Dawn Came Again', src: 'audio/DEMO But the Dawn Came Again.mp3' },
+    { name: 'Crackling Fire', src: 'audio/DEMO Crackling Fire.mp3' },
+    { name: 'Starless Skies', src: 'audio/DEMO Starless Skies.mp3' },
   ];
 
   let currentTrack = -1;
   let isPlaying = false;
-  let audioCtx = null;
-  let oscillator = null;
-  let gainNode = null;
-  let playbackTimer = null;
-  let elapsed = 0;
+  let audio = new Audio();
+  audio.preload = 'metadata';
 
   const nowPlayingBar = document.getElementById('nowPlayingBar');
   const nowPlayingTitle = document.getElementById('nowPlayingTitle');
@@ -67,72 +59,36 @@ document.addEventListener('DOMContentLoaded', () => {
     return `${m}:${s.toString().padStart(2, '0')}`;
   }
 
-  function initAudioContext() {
-    if (!audioCtx) {
-      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    }
-  }
-
-  function startTone() {
-    initAudioContext();
-    stopTone();
-
-    // Create a warm ambient drone
-    oscillator = audioCtx.createOscillator();
-    gainNode = audioCtx.createGain();
-
-    const baseFreqs = [110, 130.81, 146.83, 164.81, 196];
-    oscillator.type = 'sine';
-    oscillator.frequency.setValueAtTime(baseFreqs[currentTrack % baseFreqs.length], audioCtx.currentTime);
-
-    gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
-    gainNode.gain.linearRampToValueAtTime(0.08, audioCtx.currentTime + 1);
-
-    oscillator.connect(gainNode);
-    gainNode.connect(audioCtx.destination);
-    oscillator.start();
-  }
-
-  function stopTone() {
-    if (oscillator) {
-      try {
-        if (gainNode) {
-          gainNode.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.3);
-        }
-        setTimeout(() => {
-          try { oscillator.stop(); } catch (_) { /* already stopped */ }
-          oscillator = null;
-        }, 350);
-      } catch (_) {
-        oscillator = null;
-      }
-    }
-  }
-
-  function updateProgress() {
-    if (!isPlaying || currentTrack < 0) return;
-
-    elapsed += 0.25;
-    const track = tracks[currentTrack];
-    const pct = Math.min((elapsed / track.duration) * 100, 100);
+  // Update progress from real audio timeupdate
+  audio.addEventListener('timeupdate', () => {
+    if (currentTrack < 0) return;
+    const duration = audio.duration || 0;
+    const current = audio.currentTime || 0;
+    const pct = duration > 0 ? (current / duration) * 100 : 0;
 
     globalProgressBar.style.width = pct + '%';
-    audioTime.textContent = `${formatTime(elapsed)} / ${formatTime(track.duration)}`;
+    audioTime.textContent = `${formatTime(current)} / ${formatTime(duration)}`;
 
-    // Update track-level progress bar
     const activeItem = document.querySelector(`.track-item[data-track="${currentTrack}"]`);
     if (activeItem) {
       const bar = activeItem.querySelector('.track-progress-bar');
       if (bar) bar.style.width = pct + '%';
     }
+  });
 
-    if (elapsed >= track.duration) {
-      playNext();
-      return;
+  // Update duration display when metadata loads
+  audio.addEventListener('loadedmetadata', () => {
+    const activeItem = document.querySelector(`.track-item[data-track="${currentTrack}"]`);
+    if (activeItem) {
+      const dur = activeItem.querySelector('.track-duration');
+      if (dur) dur.textContent = `Demo · ${formatTime(audio.duration)}`;
     }
+  });
 
-    playbackTimer = setTimeout(updateProgress, 250);
-  }
+  // Auto-play next track when current ends
+  audio.addEventListener('ended', () => {
+    playNext();
+  });
 
   function playTrack(index) {
     // Reset previous
@@ -144,12 +100,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (btn) btn.className = 'fas fa-play';
     });
 
-    clearTimeout(playbackTimer);
-    elapsed = 0;
     currentTrack = index;
     isPlaying = true;
 
     const track = tracks[index];
+    audio.src = track.src;
+    audio.play();
+
     nowPlayingBar.classList.add('active');
     nowPlayingTitle.textContent = track.name;
     playPauseBtn.querySelector('i').className = 'fas fa-pause';
@@ -160,9 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = activeItem.querySelector('.track-play-btn i');
       if (btn) btn.className = 'fas fa-pause';
     }
-
-    startTone();
-    updateProgress();
   }
 
   function togglePlayPause() {
@@ -173,8 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (isPlaying) {
       isPlaying = false;
-      clearTimeout(playbackTimer);
-      stopTone();
+      audio.pause();
       playPauseBtn.querySelector('i').className = 'fas fa-play';
 
       const activeItem = document.querySelector(`.track-item[data-track="${currentTrack}"]`);
@@ -184,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else {
       isPlaying = true;
-      startTone();
+      audio.play();
       playPauseBtn.querySelector('i').className = 'fas fa-pause';
 
       const activeItem = document.querySelector(`.track-item[data-track="${currentTrack}"]`);
@@ -192,8 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const btn = activeItem.querySelector('.track-play-btn i');
         if (btn) btn.className = 'fas fa-pause';
       }
-
-      updateProgress();
     }
   }
 
@@ -203,9 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function playPrev() {
-    if (elapsed > 3) {
-      // Restart current track
-      elapsed = 0;
+    if (audio.currentTime > 3) {
+      audio.currentTime = 0;
       return;
     }
     const prev = (currentTrack - 1 + tracks.length) % tracks.length;
@@ -233,10 +183,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Seek on progress bar click
     globalProgress.addEventListener('click', (e) => {
-      if (currentTrack < 0) return;
+      if (currentTrack < 0 || !audio.duration) return;
       const rect = globalProgress.getBoundingClientRect();
       const pct = (e.clientX - rect.left) / rect.width;
-      elapsed = pct * tracks[currentTrack].duration;
+      audio.currentTime = pct * audio.duration;
     });
   }
 });
