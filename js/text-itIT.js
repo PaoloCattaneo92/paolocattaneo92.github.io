@@ -11,12 +11,12 @@ const TEXT_ITIT = {
   "nav.bio": "Bio",
   "nav.video": "Video",
   "nav.members": "Membri",
-  "nav.gallery": "Galleria",
+  "nav.shows": "Concerti",
   "nav.contact": "Contatti",
 
   // Hero
   "hero.subtitle": "Epic Folk Metal — Bergamo, Italia",
-  "hero.tagline": "\u201CDove il gelo incontra il fuoco, nascono le leggende\u201D",
+  "hero.tagline": "\u201CDal reame etereo, nascono leggende\u201D",
   "hero.cta": "Guarda l\u2019Ultimo Singolo",
   "hero.scroll": "Scorri",
 
@@ -26,34 +26,40 @@ const TEXT_ITIT = {
   // Bio
   "bio.label": "La Nostra Storia",
   "bio.title": "La Saga dei Frostlight",
-  "bio.p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. I Frostlight nascono a Bergamo con la missione di fondere le sonorit\u00E0 epiche del metal sinfonico con le melodie tradizionali folk. Dal primo giorno, la band ha portato avanti una visione musicale unica, ispirata dai paesaggi alpini e dalle antiche leggende nordiche. L\u2019energia travolgente dei loro concerti dal vivo li ha resi un nome di riferimento nella scena folk metal europea.",
-  "bio.p2": "Con tre album in studio e oltre duecento concerti dal vivo, i Frostlight hanno calcato i palchi dei festival pi\u00F9 importanti d\u2019Europa. La loro musica \u00E8 un viaggio epico attraverso terre ghiacciate e antiche battaglie, dove ogni nota racconta una storia di coraggio e rinascita. La band continua a evolversi, esplorando nuove sonorit\u00E0 senza mai perdere le proprie radici.",
-  "bio.p3html": "Oggi i Frostlight guardano al futuro con determinazione, pronti a portare la loro musica oltre ogni confine. Con il nuovo singolo <em>\u201CBut the Dawn Came Again\u201D</em> la band apre un nuovo capitolo della propria saga, fondendo potenza e melodia in un\u2019opera che parla direttamente al cuore degli ascoltatori.",
+  "bio.p1": "I Frostlight nascono dalla nostalgia della storica scena Folk Metal italiana. Formati ufficialmente nel 2024 da Alessandro, Matteo e Luca, dopo aver reclutato Paolo e Dario, si presentano al pubblico nel 2026 con il loro primo singolo \u201CBut the Dawn Came Again\u201D, un brano che cattura l\u2019essenza epica e melodica della band, segnando l\u2019inizio di una nuova era per il folk metal italiano.",
+  "bio.p2": "",
+  "bio.p3html": "Narrando di tematiche attuali attraverso l\u2019ottica di leggende e miti, fondendo passato e presente, la band bergamasca crea un ponte diretto tra il nostro mondo e l'immaginario epico.",
   "bio.stat.albums": "Album",
   "bio.stat.shows": "Concerti Live",
   "bio.stat.years": "Anni di Attivit\u00E0",
   "bio.stat.members": "Membri",
 
+  // Live Shows
+  "shows.label": "Sul Palco",
+  "shows.title": "Concerti",
+  "shows.coming": "In arrivo...",
+  "shows.subtitle": "Le nuove date saranno annunciate qui",
+
   // Video
   "video.label": "Ultima Uscita",
   "video.title": "But the Dawn Came Again",
-  "video.iframe.title": "Frostlight — But the Dawn Came Again (Video Musicale Ufficiale)",
-  "video.captionhtml": "<em>\u201CBut the Dawn Came Again\u201D</em> — Lorem Ipsum \u00B7 Dolor Sit Amet \u00B7 2026",
+  "video.iframe.title": "Frostlight — But the Dawn Came Again (Official videoclip)",
+  "video.captionhtml": "<em>\u201CBut the Dawn Came Again\u201D</em> — \u00B7 Autoprodotto \u00B7 2026",
 
   // Members
   "members.label": "La Compagnia",
   "members.title": "Membri della Band",
   "members.scroll": "Trascina per esplorare la compagnia",
   "member.ale.role": "Voce e Chitarra Ritmica",
-  "member.ale.bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua veniam.",
+    "member.ale.bio": "Noto thrasher (Ulvedharr e Terbiocide). Frontman carismatico, con una voce potente e versatile. Il cuore gelido e pulsante dei Frostlight.",
   "member.paolo.role": "Chitarra Solista, Flauti e Cori",
-  "member.paolo.bio": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.",
+  "member.paolo.bio": "Paolo (Furor Gallico 2010-2015) \u00E8 il bardo che infonde melodia nelle sonorità della band.",
   "member.boschi.role": "Basso e Cori",
-  "member.boschi.bio": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
+  "member.boschi.bio": "Dinamico e preciso, Matteo (Beriedir) \u00E8 il pilastro ritmico della band. La forza che sostiene le fondamenta di ogni canzone.",
   "member.dario.role": "Tastiere",
-  "member.dario.bio": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum perspiciatis.",
+  "member.dario.bio": "Mastro delle tastiere. Colui che rende epiche le atmosfere dei Frostlight.",
   "member.luca.role": "Batteria",
-  "member.luca.bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores ratione.",
+  "member.luca.bio": "Indomito torturatore di pelli, Luca (NFD, Pino Scotto) \u00E8 il motore inarrestabile.",
 
   // Gallery
   "gallery.label": "Live e Oltre",

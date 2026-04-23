@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frostlight — Epic Folk Metal | Bergamo, Italy</title>
-  <meta name="description" content="Frostlight is an epic folk metal band from Bergamo, Italy. Forging legends from frost, fire and folk melodies since 2014.">
+  <meta name="description"
+    content="Frostlight is an epic folk metal band from Bergamo, Italy. Forging legends from frost, fire and folk melodies since 2014.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -17,6 +21,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <!-- ====== NAVIGATION ====== -->
@@ -26,14 +31,26 @@
       <li><a href="#bio" data-i18n="nav.bio">Bio</a></li>
       <li><a href="#video" data-i18n="nav.video">Video</a></li>
       <li><a href="#members" data-i18n="nav.members">Members</a></li>
-      <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+      <li><a href="#shows" data-i18n="nav.shows">Live Shows</a></li>
       <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       <li class="lang-switcher">
         <button class="lang-btn" data-lang="it" aria-label="Italiano" title="Italiano">
-          <svg viewBox="0 0 640 480" class="flag-icon"><rect width="213.3" height="480" fill="#009246"/><rect x="213.3" width="213.4" height="480" fill="#fff"/><rect x="426.7" width="213.3" height="480" fill="#ce2b37"/></svg>
+          <svg viewBox="0 0 640 480" class="flag-icon">
+            <rect width="213.3" height="480" fill="#009246" />
+            <rect x="213.3" width="213.4" height="480" fill="#fff" />
+            <rect x="426.7" width="213.3" height="480" fill="#ce2b37" />
+          </svg>
         </button>
         <button class="lang-btn" data-lang="en" aria-label="English" title="English">
-          <svg viewBox="0 0 640 480" class="flag-icon"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0z"/><path fill="#C8102E" d="m424 281 216 159v40L369 281zm-184 20 6 35L54 480H0zM640 0v3L391 191l2-44L590 0zM0 0l239 176h-60L0 42z"/><path fill="#FFF" d="M241 0v480h160V0zM0 160v160h640V160z"/><path fill="#C8102E" d="M0 193v96h640v-96zM273 0v480h96V0z"/></svg>
+          <svg viewBox="0 0 640 480" class="flag-icon">
+            <path fill="#012169" d="M0 0h640v480H0z" />
+            <path fill="#FFF"
+              d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0z" />
+            <path fill="#C8102E"
+              d="m424 281 216 159v40L369 281zm-184 20 6 35L54 480H0zM640 0v3L391 191l2-44L590 0zM0 0l239 176h-60L0 42z" />
+            <path fill="#FFF" d="M241 0v480h160V0zM0 160v160h640V160z" />
+            <path fill="#C8102E" d="M0 193v96h640v-96zM273 0v480h96V0z" />
+          </svg>
         </button>
       </li>
     </ul>
@@ -66,18 +83,18 @@
     <div class="container">
       <div style="position: relative; overflow: hidden; border: 1px solid var(--border-subtle);">
         <!-- TODO: replace with band group photo -->
-        <img
-          src="img/band/band-splash.webp"
-          alt="Frostlight — all band members"
-          style="width: 100%; height: 500px; object-fit: cover; filter: contrast(1.1) saturate(0.8);"
-        >
-        <div style="position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg-section) 0%, transparent 30%, transparent 70%, var(--bg-section) 100%);"></div>
-        <div style="position: absolute; bottom: 2rem; left: 2rem; z-index: 2; display: flex; align-items: center; gap: 1rem;">
-          <img src="img/Simbolo.svg" alt="" class="band-photo-symbol">
-          <div>
-            <span style="font-family: var(--font-ui); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: var(--accent-ice);" data-i18n="bandphoto.label">The fellowship</span>
-            <img src="img/logo.svg" alt="Frostlight" style="height: 36px; display: block; margin-top: 0.3rem; filter: brightness(1.2);">
-          </div>
+        <picture>
+          <source media="(max-width: 768px)" srcset="img/band/band_mobile.jpeg">
+          <source media="(min-width: 769px)" srcset="img/band/band_desktop.jpeg">
+          <img src="img/band/band_desktop.jpeg" alt="Frostlight — all band members" class="band-group-img">
+        </picture>
+        <div
+          style="position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg-section) 0%, transparent 30%, transparent 70%, var(--bg-section) 100%);">
+        </div>
+        <div style="position: absolute; bottom: 2rem; left: 2rem; z-index: 2;">
+          <span
+            style="font-family: var(--font-ui); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: var(--accent-ice);"
+            data-i18n="bandphoto.label">The fellowship</span>
         </div>
       </div>
     </div>
@@ -92,20 +109,32 @@
         <div class="section-divider"></div>
       </div>
       <div class="bio-content reveal">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Frostlight sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed perspiciatis.</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. Frostlight similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga <em>"But the Dawn Came Again"</em> et harum quidem rerum facilis est et expedita distinctio.</p>
+        <p data-i18n="bio.p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Frostlight sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum sed perspiciatis.</p>
+        <p data-i18n="bio.p2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+          consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem
+          ipsum quia dolor sit amet.</p>
+        <p data-i18n-html="bio.p3html">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+          cupiditate non provident. Frostlight similique sunt in culpa qui officia deserunt mollitia animi, id est
+          laborum et dolorum fuga <em>"But the Dawn Came Again"</em> et harum quidem rerum facilis est et expedita
+          distinctio.</p>
         <div class="bio-stats">
           <div class="bio-stat">
-            <span class="bio-stat-number">3</span>
+            <span class="bio-stat-number">Soon...</span>
             <span class="bio-stat-label" data-i18n="bio.stat.albums">Albums</span>
           </div>
           <div class="bio-stat">
-            <span class="bio-stat-number">200+</span>
+            <span class="bio-stat-number">Soon...</span>
             <span class="bio-stat-label" data-i18n="bio.stat.shows">Live Shows</span>
           </div>
           <div class="bio-stat">
-            <span class="bio-stat-number">12</span>
+            <span class="bio-stat-number">2</span>
             <span class="bio-stat-label" data-i18n="bio.stat.years">Years Active</span>
           </div>
           <div class="bio-stat">
@@ -126,14 +155,10 @@
         <div class="section-divider"></div>
       </div>
       <div class="video-wrapper reveal">
-        <iframe
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          title="Frostlight — But the Dawn Came Again (Official Music Video)"
-          data-i18n-title="video.iframe.title"
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Frostlight — But the Dawn Came Again (Official Music Video)" data-i18n-title="video.iframe.title"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
+          allowfullscreen loading="lazy"></iframe>
       </div>
       <p class="video-caption reveal" data-i18n-html="video.captionhtml">
         <em>"But the Dawn Came Again"</em> — Lorem Ipsum · Dolor Sit Amet · 2026
@@ -153,72 +178,52 @@
       <div class="members-track">
 
         <div class="member-card">
-          <!-- TODO: replace with Ale photo -->
-          <img
-            class="member-photo"
-            src="img/members/fabiolione.jpg"
-            alt="Ale"
-          >
+          <img class="member-photo" src="img/members/ale.JPG" alt="Alessandro Lera">
           <div class="member-info">
-            <h3 class="member-name">Ale</h3>
+            <h3 class="member-name">Alessandro Lera</h3>
             <p class="member-role" data-i18n="member.ale.role">Vocals & Rhythm Guitar</p>
-            <p class="member-bio" data-i18n="member.ale.bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua veniam.</p>
+            <p class="member-bio" data-i18n="member.ale.bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua veniam.</p>
           </div>
         </div>
 
         <div class="member-card">
-          <!-- TODO: replace with Paolo photo -->
-          <img
-            class="member-photo"
-            src="img/members/fabiolione.jpg"
-            alt="Paolo"
-          >
+          <img class="member-photo" src="img/members/paolo.JPG" alt="Paolo">
           <div class="member-info">
-            <h3 class="member-name">Paolo</h3>
+            <h3 class="member-name">Paolo Cattaneo</h3>
             <p class="member-role" data-i18n="member.paolo.role">Lead Guitar, Whistles & Choirs</p>
-            <p class="member-bio" data-i18n="member.paolo.bio">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+            <p class="member-bio" data-i18n="member.paolo.bio">Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
           </div>
         </div>
 
         <div class="member-card">
-          <!-- TODO: replace with Boschi photo -->
-          <img
-            class="member-photo"
-            src="img/members/fabiolione.jpg"
-            alt="Boschi"
-          >
+          <img class="member-photo" src="img/members/matteo.JPG" alt="Boschi">
           <div class="member-info">
-            <h3 class="member-name">Boschi</h3>
+            <h3 class="member-name">Matteo Boschini</h3>
             <p class="member-role" data-i18n="member.boschi.role">Bass & Choirs</p>
-            <p class="member-bio" data-i18n="member.boschi.bio">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p>
+            <p class="member-bio" data-i18n="member.boschi.bio">Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p>
           </div>
         </div>
 
         <div class="member-card">
-          <!-- TODO: replace with Dario photo -->
-          <img
-            class="member-photo"
-            src="img/members/fabiolione.jpg"
-            alt="Dario"
-          >
+          <img class="member-photo" src="img/members/dario.JPG" alt="Dario">
           <div class="member-info">
-            <h3 class="member-name">Dario</h3>
+            <h3 class="member-name">Dario Anese</h3>
             <p class="member-role" data-i18n="member.dario.role">Keyboards</p>
-            <p class="member-bio" data-i18n="member.dario.bio">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum perspiciatis.</p>
+            <p class="member-bio" data-i18n="member.dario.bio">Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum perspiciatis.</p>
           </div>
         </div>
 
         <div class="member-card">
-          <!-- TODO: replace with Luca photo -->
-          <img
-            class="member-photo"
-            src="img/members/fabiolione.jpg"
-            alt="Luca"
-          >
+          <img class="member-photo" src="img/members/luca.JPG" alt="Luca">
           <div class="member-info">
-            <h3 class="member-name">Luca</h3>
+            <h3 class="member-name">Luca Fucking Mazzucconi</h3>
             <p class="member-role" data-i18n="member.luca.role">Drums</p>
-            <p class="member-bio" data-i18n="member.luca.bio">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores ratione.</p>
+            <p class="member-bio" data-i18n="member.luca.bio">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+              aut odit aut fugit sed quia consequuntur magni dolores ratione.</p>
           </div>
         </div>
 
@@ -229,61 +234,19 @@
     </p>
   </section>
 
-  <!-- ====== GALLERY ====== -->
-  <section class="section section-alt" id="gallery">
+  <!-- ====== LIVE SHOWS ====== -->
+  <section class="section section-alt" id="shows">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label" data-i18n="gallery.label">Live & Beyond</span>
-        <h2 class="section-title" data-i18n="gallery.title">Gallery</h2>
+        <span class="section-label" data-i18n="shows.label">On Stage</span>
+        <h2 class="section-title" data-i18n="shows.title">Live Shows</h2>
         <div class="section-divider"></div>
       </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-item reveal">
-          <!-- TODO: replace with gallery photo 1 -->
-          <img src="img/members/fabiolione.jpg" alt="Live at Wacken Open Air 2024" loading="lazy">
-          <div class="gallery-overlay"><span data-i18n="gallery.1">Wacken Open Air 2024</span></div>
-        </div>
-        <div class="gallery-item reveal">
-          <!-- TODO: replace with gallery photo 2 -->
-          <img src="img/members/fabiolione.jpg" alt="Fans at Bergamo Metal Fest" loading="lazy">
-          <div class="gallery-overlay"><span data-i18n="gallery.2">Bergamo Metal Fest</span></div>
-        </div>
-        <div class="gallery-item reveal">
-          <!-- TODO: replace with gallery photo 3 -->
-          <img src="img/members/fabiolione.jpg" alt="Promo shoot in the Alps" loading="lazy">
-          <div class="gallery-overlay"><span data-i18n="gallery.3">Alpine Promo Shoot</span></div>
-        </div>
-        <div class="gallery-item reveal">
-          <!-- TODO: replace with gallery photo 4 -->
-          <img src="img/members/fabiolione.jpg" alt="Backstage at Hellfest 2025" loading="lazy">
-          <div class="gallery-overlay"><span data-i18n="gallery.4">Hellfest 2025 — Backstage</span></div>
-        </div>
-        <div class="gallery-item reveal">
-          <!-- TODO: replace with gallery photo 5 -->
-          <img src="img/members/fabiolione.jpg" alt="Studio session" loading="lazy">
-          <div class="gallery-overlay"><span data-i18n="gallery.5">Studio Session</span></div>
-        </div>
-        <div class="gallery-item reveal">
-          <!-- TODO: replace with gallery photo 6 -->
-          <img src="img/members/fabiolione.jpg" alt="Live at Città Alta, Bergamo" loading="lazy">
-          <div class="gallery-overlay"><span data-i18n="gallery.6">Città Alta, Bergamo</span></div>
-        </div>
-        <div class="gallery-item reveal">
-          <!-- TODO: replace with gallery photo 7 -->
-          <img src="img/members/fabiolione.jpg" alt="European tour 2025" loading="lazy">
-          <div class="gallery-overlay"><span data-i18n="gallery.7">European Tour 2025</span></div>
-        </div>
-        <div class="gallery-item reveal">
-          <!-- TODO: replace with gallery photo 8 -->
-          <img src="img/members/fabiolione.jpg" alt="Official band portrait 2026" loading="lazy">
-          <div class="gallery-overlay"><span data-i18n="gallery.8">Official Portrait 2026</span></div>
-        </div>
-        <div class="gallery-item reveal">
-          <!-- TODO: replace with gallery photo 9 -->
-          <img src="img/members/fabiolione.jpg" alt="Acoustic set at medieval festival" loading="lazy">
-          <div class="gallery-overlay"><span data-i18n="gallery.9">Medieval Festival — Acoustic Set</span></div>
-        </div>
+      <div class="reveal" style="text-align: center; padding: 3rem 0;">
+        <p style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent-gold); letter-spacing: 2px;"
+          data-i18n="shows.coming">Coming soon...</p>
+        <p style="font-family: var(--font-ui); font-size: 0.85rem; color: var(--text-dim); margin-top: 1rem; letter-spacing: 1px;"
+          data-i18n="shows.subtitle">New dates will be announced here</p>
       </div>
     </div>
   </section>
@@ -297,21 +260,21 @@
         <div class="section-divider"></div>
       </div>
 
-      <div class="contact-grid reveal">
-        <div class="contact-info">
-          <h3 data-i18n="contact.reach">Reach the Band</h3>
+      <div class="reveal" style="display: flex; flex-direction: column; align-items: center;">
+        <div class="contact-info" style="display: inline-block;">
+          <h3 style="text-align: center;" data-i18n="contact.reach">Reach the Band</h3>
 
           <div class="contact-item">
             <div class="contact-icon"><i class="fas fa-envelope"></i></div>
             <div class="contact-detail">
-              <a href="mailto:info@frostlightband.com">info@frostlightband.com</a>
+              <a href="mailto:info@frostlight.com">info@frostlight.com</a>
             </div>
           </div>
 
           <div class="contact-item">
             <div class="contact-icon"><i class="fas fa-guitar"></i></div>
             <div class="contact-detail">
-              <a href="mailto:booking@frostlightband.com">booking@frostlightband.com</a>
+              <a href="mailto:booking@frostlight.com">booking@frostlight.com</a>
             </div>
           </div>
 
@@ -322,51 +285,37 @@
             </div>
           </div>
 
-          <div class="contact-item">
+          <!-- <div class="contact-item">
             <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
             <div class="contact-detail" data-i18n="contact.location">Bergamo, Lombardy, Italy</div>
-          </div>
+          </div> -->
 
-          <h3 style="margin-top: 2rem;" data-i18n="contact.follow">Follow Us</h3>
-          <div class="social-links">
-            <a href="https://facebook.com/frostlightband" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://instagram.com/frostlightband" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+          <h3 style="margin-top: 2rem; text-align: center;" data-i18n="contact.follow">Follow Us</h3>
+          <div class="social-links" style="justify-content: center;">
+            <a href="https://instagram.com/frostlightband" class="social-link" target="_blank" rel="noopener"
+              aria-label="Instagram">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://youtube.com/@frostlightband" class="social-link" target="_blank" rel="noopener" aria-label="YouTube">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://open.spotify.com/artist/frostlight" class="social-link" target="_blank" rel="noopener" aria-label="Spotify">
-              <i class="fab fa-spotify"></i>
-            </a>
-            <a href="https://tiktok.com/@frostlightband" class="social-link" target="_blank" rel="noopener" aria-label="TikTok">
+            <a href="https://tiktok.com/@frostlightband" class="social-link" target="_blank" rel="noopener"
+              aria-label="TikTok">
               <i class="fab fa-tiktok"></i>
             </a>
-            <a href="https://twitter.com/frostlightband" class="social-link" target="_blank" rel="noopener" aria-label="X / Twitter">
-              <i class="fab fa-x-twitter"></i>
+            <a href="https://facebook.com/frostlightband" class="social-link" target="_blank" rel="noopener"
+              aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
             </a>
+            <a href="https://youtube.com/@frostlightband" class="social-link" target="_blank" rel="noopener"
+              aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://open.spotify.com/artist/frostlight" class="social-link" target="_blank" rel="noopener"
+              aria-label="Spotify">
+              <i class="fab fa-spotify"></i>
+            </a>
+            <!-- <a href="https://twitter.com/frostlightband" class="social-link" target="_blank" rel="noopener" aria-label="X / Twitter">
+              <i class="fab fa-x-twitter"></i>
+            </a> -->
           </div>
-        </div>
-
-        <div class="contact-form">
-          <h3 data-i18n="contact.send">Send a Message</h3>
-          <form id="contactForm" onsubmit="return false;">
-            <div class="form-group">
-              <input type="text" placeholder="Your Name" required data-i18n-placeholder="contact.placeholder.name">
-            </div>
-            <div class="form-group">
-              <input type="email" placeholder="Your Email" required data-i18n-placeholder="contact.placeholder.email">
-            </div>
-            <div class="form-group">
-              <input type="text" placeholder="Subject" data-i18n-placeholder="contact.placeholder.subject">
-            </div>
-            <div class="form-group">
-              <textarea placeholder="Your Message..." required data-i18n-placeholder="contact.placeholder.message"></textarea>
-            </div>
-            <button type="submit" class="btn-submit" data-i18n="contact.submit">Send Message</button>
-          </form>
         </div>
       </div>
     </div>
@@ -395,5 +344,5 @@
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
-</html>
 
+</html>

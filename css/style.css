@@ -823,12 +823,26 @@ img {
   opacity: 1;
 }
 
-/* --- Band Photo Symbol --- */
-.band-photo-symbol {
+/* --- Band Photo Symbol --- */\n.band-photo-symbol {
   height: 48px;
   width: auto;
   opacity: 0.8;
   filter: drop-shadow(0 0 10px var(--glow-gold));
+}
+
+/* --- Band Group Image --- */
+.band-group-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: contrast(1.1) saturate(0.8);
+}
+
+@media (max-width: 768px) {
+  .band-group-img {
+    height: 500px;
+    object-fit: cover;
+  }
 }
 
 .footer p {

@@ -11,12 +11,12 @@ const TEXT_ENUS = {
   "nav.bio": "Bio",
   "nav.video": "Video",
   "nav.members": "Members",
-  "nav.gallery": "Gallery",
+  "nav.shows": "Live Shows",
   "nav.contact": "Contact",
 
   // Hero
   "hero.subtitle": "Epic Folk Metal — Bergamo, Italy",
-  "hero.tagline": "\u201CWhere frost meets fire, legends are forged\u201D",
+  "hero.tagline": "\u201CFrom the ethereal realm, legends are born\u201D",
   "hero.cta": "Watch Latest Single",
   "hero.scroll": "Scroll",
 
@@ -26,34 +26,40 @@ const TEXT_ENUS = {
   // Bio
   "bio.label": "Our Story",
   "bio.title": "The Saga of Frostlight",
-  "bio.p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Frostlight sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed perspiciatis.",
-  "bio.p2": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor sit amet.",
-  "bio.p3html": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. Frostlight similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga <em>\u201CBut the Dawn Came Again\u201D</em> et harum quidem rerum facilis est et expedita distinctio.",
+  "bio.p1": "Frostlight was born from a longing for the historic Italian Folk Metal scene. Officially formed in 2024 by Alessandro, Matteo and Luca, after recruiting Paolo and Dario, the band introduced themselves to the public in 2026 with their debut single \u201CBut the Dawn Came Again\u201D, a track that captures the epic and melodic essence of the band, marking the beginning of a new era for Italian folk metal.",
+  "bio.p2": "",
+  "bio.p3html": "Narrating contemporary themes through the lens of legends and myths, blending past and present, the Bergamo-based band creates a direct bridge between our world and the epic imaginary.",
   "bio.stat.albums": "Albums",
   "bio.stat.shows": "Live Shows",
   "bio.stat.years": "Years Active",
   "bio.stat.members": "Members",
 
+  // Live Shows
+  "shows.label": "On Stage",
+  "shows.title": "Live Shows",
+  "shows.coming": "Coming soon...",
+  "shows.subtitle": "New dates will be announced here",
+
   // Video
   "video.label": "Latest Release",
   "video.title": "But the Dawn Came Again",
   "video.iframe.title": "Frostlight — But the Dawn Came Again (Official Music Video)",
-  "video.captionhtml": "<em>\u201CBut the Dawn Came Again\u201D</em> — Lorem Ipsum \u00B7 Dolor Sit Amet \u00B7 2026",
+  "video.captionhtml": "<em>\u201CBut the Dawn Came Again\u201D</em> — \u00B7 Self-produced \u00B7 2026",
 
   // Members
   "members.label": "The Fellowship",
   "members.title": "Band Members",
   "members.scroll": "Drag to explore the fellowship",
   "member.ale.role": "Vocals & Rhythm Guitar",
-  "member.ale.bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua veniam.",
+  "member.ale.bio": "Renowned thrasher (Ulvedharr and Terbiocide). A charismatic frontman with a powerful and versatile voice. The frozen, beating heart of Frostlight.",
   "member.paolo.role": "Lead Guitar, Whistles & Choirs",
-  "member.paolo.bio": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.",
+  "member.paolo.bio": "Paolo (Furor Gallico 2010\u20132015) is the shaman who infuses melody into the band\u2019s sound.",
   "member.boschi.role": "Bass & Choirs",
-  "member.boschi.bio": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
+  "member.boschi.bio": "Dynamic and precise, Matteo (Beriedir) is the rhythmic pillar of the band. The force that sustains the foundation of every song.",
   "member.dario.role": "Keyboards",
-  "member.dario.bio": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum perspiciatis.",
+  "member.dario.bio": "Master of the keyboards. The one who makes Frostlight\u2019s atmospheres truly epic.",
   "member.luca.role": "Drums",
-  "member.luca.bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores ratione.",
+  "member.luca.bio": "Indomitable drumheads tormentor, Luca (NFD, Pino Scotto) is the unstoppable engine.",
 
   // Gallery
   "gallery.label": "Live & Beyond",
@@ -61,12 +67,12 @@ const TEXT_ENUS = {
   "gallery.1": "Wacken Open Air 2024",
   "gallery.2": "Bergamo Metal Fest",
   "gallery.3": "Alpine Promo Shoot",
-  "gallery.4": "Hellfest 2025 — Backstage",
+  "gallery.4": "Hellfest 2025 \u2014 Backstage",
   "gallery.5": "Studio Session",
   "gallery.6": "Citt\u00E0 Alta, Bergamo",
   "gallery.7": "European Tour 2025",
   "gallery.8": "Official Portrait 2026",
-  "gallery.9": "Medieval Festival — Acoustic Set",
+  "gallery.9": "Medieval Festival \u2014 Acoustic Set",
 
   // Contact
   "contact.label": "Get in Touch",
